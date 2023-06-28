@@ -1,0 +1,299 @@
+[
+    {
+        "id": 1,
+        "name": "Samsung Galaxy Note 9",
+        "color": "MidnightBlack",
+        "RAM": "512 GB",
+        "rating": 3,
+        "price": {
+            "sale-price": "149.99",
+            "listed-price": "100.99"
+        },
+        "product_label": [
+            "NEW",
+            "SALE"
+        ],
+        "image": "../images/samsung.png",
+        "reviews": "9,300",
+        "brand":"Apple"
+    },
+    {
+        "id": 2,
+        "name": "Mi Mix 2",
+        "color": "Black",
+        "RAM": "256 GB",
+        "rating": 2,
+        "price": {
+            "sale-price": "139.99",
+            "listed-price": "80.99"
+        },
+        "product_label": [
+            "NEW"
+        ],
+        "image": "images/mi.jpg",
+        "reviews": "9,300"
+    },
+    {
+        "id": 3,
+        "name": "iphone 14 pro",
+        "color": "LightBlue",
+        "RAM": "128 GB",
+        "rating": 5,
+        "price": {
+            "sale-price": "189.99",
+            "listed-price": "149.99"
+        },
+        "product_label": [
+            "SALE"
+        ],
+        "image": "images/iphone.jpg",
+        "reviews": "9,300"
+    },
+    {
+        "id": 4,
+        "name": "Samsung Galaxy Note 9",
+        "color": "MidnightBlack",
+        "RAM": "512 GB",
+        "rating": 4,
+        "price": {
+            "sale-price": "149.99",
+            "listed-price": "100.99"
+        },
+        "product_label": [
+            "NEW"
+        ],
+        "image": "images/samsung.png",
+        "reviews": "9,300"
+    },
+    {
+        "id": 5,
+        "name": "Mi Mix 2",
+        "color": "Black",
+        "RAM": "256 GB",
+        "rating": 3,
+        "price": {
+            "sale-price": "139.99",
+            "listed-price": "80.99"
+        },
+        "product_label": [
+            "NEW"
+        ],
+        "image": "images/mi.jpg",
+        "reviews": "9,300"
+    },
+    {
+        "id": 6,
+        "name": "iphone 14 pro",
+        "color": "LightBlue",
+        "RAM": "128 GB",
+        "rating": 5,
+        "price": {
+            "sale-price": "189.99",
+            "listed-price": "149.99"
+        },
+        "product_label": [
+            "SALE"
+        ],
+        "image": "images/iphone.jpg",
+        "reviews": "9,300"
+    },
+    {
+        "id": 7,
+        "name": "Samsung Galaxy Note 9",
+        "color": "MidnightBlack",
+        "RAM": "512 GB",
+        "rating": 4,
+        "price": {
+            "sale-price": "149.99",
+            "listed-price": "100.99"
+        },
+        "product_label": [
+            "NEW",
+            "SALE"
+        ],
+        "image": "images/samsung.png",
+        "reviews": "9,300"
+    },
+    {
+        "id": 8,
+        "name": "Mi Mix 2",
+        "color": "Black",
+        "RAM": "256 GB",
+        "rating": 3,
+        "price": {
+            "sale-price": "139.99",
+            "listed-price": "80.99"
+        },
+        "product_label": [
+            "NEW"
+        ],
+        "image": "images/mi.jpg",
+        "reviews": "9,300"
+    },
+    {
+        "id": 9,
+        "name": "iphone 14 pro",
+        "color": "LightBlue",
+        "RAM": "128 GB",
+        "rating": 5,
+        "price": {
+            "sale-price": "189.99",
+            "listed-price": "149.99"
+        },
+        "product_label": [
+            "NEW"
+        ],
+        "image": "images/iphone.jpg",
+        "reviews": "9,300",
+        "brand": "Apple"
+    },
+    {
+        "id": 10,
+        "name": "Samsung Galaxy Note 9",
+        "color": "MidnightBlack",
+        "RAM": "512 GB",
+        "rating": 4,
+        "price": {
+            "sale-price": "149.99",
+            "listed-price": "100.99"
+        },
+        "product_label": [
+            "NEW",
+            "SALE"
+        ],
+        "image": "images/samsung.png",
+        "reviews": "9,300",
+        "brand": "Samsung"
+    },
+    {
+        "id": 11,
+        "name": "Mi Mix 2",
+        "color": "Black",
+        "RAM": "256 GB",
+        "rating": 3,
+        "price": {
+            "sale-price": "139.99",
+            "listed-price": "80.99"
+        },
+        "product_label": [
+            "NEW"
+        ],
+        "image": "images/mi.jpg",
+        "reviews": "9,300",
+        "brand": "Mi"
+    },
+    {
+        "id": 12,
+        "name": "iphone 14 pro",
+        "color": "LightBlue",
+        "RAM": "128 GB",
+        "rating": 5,
+        "price": {
+            "sale-price": "189.99",
+            "listed-price": "149.99"
+        },
+        "product_label": [
+            "SALE"
+        ],
+        "image": "images/iphone.jpg",
+        "reviews": "9,300"
+    },
+    {
+        "id": 13,
+        "name": "Samsung Galaxy Note 9",
+        "color": "MidnightBlack",
+        "RAM": "512 GB",
+        "rating": 4,
+        "price": {
+            "sale-price": "149.99",
+            "listed-price": "100.99"
+        },
+        "product_label": [
+            "NEW",
+            "SALE"
+        ],
+        "image": "images/samsung.png",
+        "reviews": "9,300"
+    },
+    {
+        "id": 14,
+        "name": "Mi Mix 2",
+        "color": "Black",
+        "RAM": "256 GB",
+        "rating": 3,
+        "price": {
+            "sale-price": "139.99",
+            "listed-price": "80.99"
+        },
+        "product_label": [
+            "NEW"
+        ],
+        "image": "images/mi.jpg",
+        "reviews": "9,300"
+    },
+    {
+        "id": 15,
+        "name": "iphone 14 pro",
+        "color": "LightBlue",
+        "RAM": "128 GB",
+        "rating": 5,
+        "price": {
+            "sale-price": "189.99",
+            "listed-price": "149.99"
+        },
+        "product_label": [
+            "SALE"
+        ],
+        "image": "images/iphone.jpg",
+        "reviews": "9,300"
+    },
+    {
+        "id": 16,
+        "name": "Samsung Galaxy Note 9",
+        "color": "MidnightBlack",
+        "RAM": "512 GB",
+        "rating": 4,
+        "price": {
+            "sale-price": "149.99",
+            "listed-price": "100.99"
+        },
+        "product_label": [
+            "NEW",
+            "SALE"
+        ],
+        "image": "images/samsung.png",
+        "reviews": "9,300"
+    },
+    {
+        "id": 17,
+        "name": "Mi Mix 2",
+        "color": "Black",
+        "RAM": "256 GB",
+        "rating": 3,
+        "price": {
+            "sale-price": "139.99",
+            "listed-price": "80.99"
+        },
+        "product_label": [
+            "NEW"
+        ],
+        "image": "images/mi.jpg",
+        "reviews": "9,300"
+    },
+    {
+        "id": 18,
+        "name": "iphone 14 pro",
+        "color": "LightBlue",
+        "RAM": "128 GB",
+        "rating": 5,
+        "price": {
+            "sale-price": "189.99",
+            "listed-price": "149.99"
+        },
+        "product_label": [
+            "SALE"
+        ],
+        "image": "images/iphone.jpg",
+        "reviews": "9,300"
+    }
+]

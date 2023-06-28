@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>commerce factory</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- -----------HEADER------------ -->
+    <header>
+        <section class="mobile-view">
+            <!-- --------------------MOBILE-HEAD-SECTION---------------------- -->
+            <div class="mobile-head-section-top">
+                <div class="mobile-help-text">
+                    <a href=""><SPan><i class="fa-solid fa-phone"></i></SPan> NEED HELP ?</a>
+                </div>
+                <div class="mobile-useraccounts">
+                    <a href=""><span><i class="fa-regular fa-user"></i> Sign In</span>
+                        <i class="fa-regular fa-heart"></i><span class="mobile-superset" id="mobile-wishlist"></span>
+                        <i class="fa-solid fa-cart-shopping"></i><span class="mobile-superset" id="mobile-cart"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="mobile-head-section-bottom">
+                <img src="./images/Kraya_logo.svg" alt="Kraya logo">
+                <form class="serachbar">
+                    <input type="text" placeholder="Search for products">
+                    <i class="fa-solid fa-magnifying-glass fa-sm"></i>
+                </form>
+            </div>
+        </section>
+        <!-- -------------------------DESKTOP HEAD SECTION--------------------- -->
+        <section class="desktop-view">
+            <div class="user-account">
+                <a class="user-account-item" href="#">WISHLIST <i class="fa-regular fa-heart"></i></a><span class="superset" id="wishlist"></span>
+                <span class="user-account-item">|</span>
+                <a class="user-account-item" href="#">CART <i class="fa-solid fa-bag-shopping"></i></a><span class="superset" id="cart"></span>
+                <span class="user-account-item">|</span>
+                <a class="user-account-item" href="#"><i class="fa-regular fa-user"></i> SAI GANESH <i class="fa-solid fa-chevron-down"></i></a>
+            </div>
+            <div class="navigation-bar">
+                <div class="logo">
+                    <a href="#"><h1>KRAYA.</h1></a>
+                </div>
+                <div class="navigation-menu">
+                    <a class="menu-item" href="#">PHONE</a>
+                    <a class="menu-item" href="#">TELEVISION</a>
+                    <a class="menu-item" href="#">REFRIGERATOR</a>
+                    <a class="menu-item" href="#">LAPTOP</a>
+                    <a class="menu-item" href="#">WASHING MACHINE</a>
+                    <a class="menu-item" href="#">DOWNLOADS</a>
+                </div>
+                <div class="navigation-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- ----------Main section------- -->
+    <main>
+        <section class="mobile-view">
+            <!-- --------------MOBILE BUTTONS SECTION-------------------- -->
+            <div class="mobile-buttons-container">
+                <button class="mobile-sort-by mobile-buttons">
+                    <i class="fa-solid fa-arrow-up-wide-short"></i>SORT BY
+                </button>
+                <button class="mobile-buttons">
+                    <i class="fa-solid fa-filter"></i>FILTERS
+                </button>
+            </div>
+            <div class="mobile-results-text" id="mobile-results-display">
+                <!-- From javascript -->
+            </div>
+        </section>
+        <section class="desktop-view">
+            <!-- ----------------DESKTOP INFORMATION SECTION---------------------- -->
+            <div class="menu-section">
+                <div class="home-mobiles-text">
+                    <a href="#">HOME / MOBILES</a>
+                </div>
+                <div class="showing-no-of-products" id="results-display">
+                    <!-- from javascript -->
+                </div>
+                <div class="sortby-text">
+                    <a class="sortby-items">Sort By</a>
+                    <a class="sortby-items" id="sortby-rating" >Relevance</a>
+                    <a class="sortby-items" id="sortby-price" >Price low-High</a>
+                    <a class="sortby-items" id="sortby-new" >Newest First</a>
+                </div>
+            </div>
+        </section>
+        <!-- ----------------DESKTOP FILTERS SECTION-------------------- -->
+        <div class="flex-container">
+            <aside class="desktop-view">
+                <form>
+                    <div class="filters">
+                        <div class="filters-clearall-text flex-container">
+                            <p class="filters-text">FILTERS</p>
+                            <p class="clearall-text">CLEAR ALL</p>
+                        </div>
+                        <details class="filter-items-container">
+                            <summary class="filter-item flex-container">
+                                <p>Price</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </summary>
+                            <!-- <div class="filters-content"> -->
+                                <div class="wrapper">
+                                    <div class="slider">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="range-input">
+                                        <input type="range" class="range-min" min="100" max="10000" value="2500" step="100">
+                                        <input type="range" class="range-max" min="100" max="10000" value="7500" step="100">
+                                    </div>
+                                    <div class="price-input">
+                                        <div class="field">
+                                            <input type="number" class="input-min" value="2500">
+                                        </div>
+                                        <div class="field">
+                                            <input type="number" class="input-max" value="7500">
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- </div> -->
+                        </details>
+                        <details class="filter-items-container">
+                            <summary class="filter-item flex-container">
+                                <p>Brand</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </summary>
+                            <div class="filters-content flex-container">
+                                <ul class="brands-list" >
+                                    <li class="brands-list-items"><input type="checkbox" class="brand-name" name="Apple"> Apple</li>
+                                    <li class="brands-list-items"><input type="checkbox" class="brand-name" name="Samsung"> Samsung</li>
+                                    <li class="brands-list-items"><input type="checkbox" class="brand-name" name="Mi"> Mi</li>
+                                    <li class="brands-list-items"><input type="checkbox" class="brand-name" name="xiamoi"> Xiaomi</li>
+                                </ul>
+                                <ul class="brands-list" >
+                                    <li class="brands-list-items"><input type="checkbox" class="brand-name" name="Sony"> Sony</li>
+                                    <li class="brands-list-items"><input type="checkbox" class="brand-name" name="LG"> LG</li>
+                                    <li class="brands-list-items"><input type="checkbox" class="brand-name" name="Honor"> Honor</li>
+                                    <li class="brands-list-items"><input type="checkbox" class="brand-name" name="Meizu"> Meizu</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="filter-items-container">
+                            <summary class="filter-item flex-container">
+                                <p>Battery Capacity</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </summary>
+                            <div class="filters-content">
+                                <ul class="brands-list" >
+                                    <li class="brands-list-items"><input type="checkbox"> 4000mah</li>
+                                    <li class="brands-list-items"><input type="checkbox"> 3100mah</li>
+                                    <li class="brands-list-items"><input type="checkbox"> 2400mah</li>
+                                    <li class="brands-list-items"><input type="checkbox"> 1950mah</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="filter-items-container">
+                            <summary class="filter-item flex-container">
+                                <p>Screen Size</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </summary>
+                            <div class="filters-content">
+                                <ul class="brands-list" >
+                                    <li class="brands-list-items"><input type="checkbox"> 6.67inch</li>
+                                    <li class="brands-list-items"><input type="checkbox"> 6.50inch</li>
+                                    <li class="brands-list-items"><input type="checkbox"> 6.00inch</li>
+                                    <li class="brands-list-items"><input type="checkbox"> 5.40inch</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="filter-items-container">
+                            <summary class="filter-item flex-container">
+                                <p>RAM</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </summary>
+                            <div class="filters-content">
+                                <ul class="brands-list" >
+                                    <li class="brands-list-items"><input type="checkbox"> 4GB</li>
+                                    <li class="brands-list-items"><input type="checkbox"> 6GB</li>
+                                    <li class="brands-list-items"><input type="checkbox"> 8GB</li>
+                                    <li class="brands-list-items"><input type="checkbox"> 12GB</li>
+                                    <li class="brands-list-items"><input type="checkbox"> 16GB</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="filter-items-container">
+                            <summary class="filter-item flex-container">
+                                <p>Customer Ratings</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </summary>
+                            <div class="filters-content">
+                                <ul class="brands-list">
+                                <li class="brands-list-items"><input type="checkbox"> 4★ & above</li>
+                                <li class="brands-list-items"><input type="checkbox"> 3★ & above</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="filter-items-container">
+                            <summary class="filter-item flex-container">
+                                <p>Camera</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </summary>
+                            <div class="filters-content">
+                                <ul class="brands-list" >
+                                    <li class="brands-list-items"><input type="checkbox"> 8MP</li>
+                                    <li class="brands-list-items"><input type="checkbox"> 12MP</li>
+                                    <li class="brands-list-items"><input type="checkbox"> 16MP</li>
+                                    <li class="brands-list-items"><input type="checkbox"> 32MP</li>
+                                    <li class="brands-list-items"><input type="checkbox"> 64MP</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="filter-items-container">
+                            <summary class="filter-item flex-container">
+                                <p>Resolution Type</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </summary>
+                            <div class="filters-content">
+                                <ul class="brands-list" >
+                                    <li class="brands-list-items"><input type="checkbox"> Full HD</li>
+                                    <li class="brands-list-items"><input type="checkbox"> Full HD+</li>
+                                    <li class="brands-list-items"><input type="checkbox"> Full HD+ AMOLED Display</li>
+                                    <li class="brands-list-items"><input type="checkbox"> Full HD+ Super AMOLED Display</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="filter-items-container">
+                            <summary class="filter-item flex-container">
+                                <p>Operating System</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </summary>
+                            <div class="filters-content">
+                                <ul class="brands-list" >
+                                    <li class="brands-list-items"><input type="checkbox"> Android</li>
+                                    <li class="brands-list-items"><input type="checkbox"> Blackberry</li>
+                                    <li class="brands-list-items"><input type="checkbox"> iOS</li>
+                                    <li class="brands-list-items"><input type="checkbox"> KaiOS</li>
+                                    <li class="brands-list-items"><input type="checkbox"> Symbian</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </div>
+                </form>
+            </aside>
+            <!-- -----------------Displaying products retrieved from json dadta------------- -->
+            <section class="products-data" id="products-data">
+                <!-- <div class="products">
+                    <div class="wishlist-icon">
+                        <p class="heart-icon"><i class="fa-regular fa-heart"></i></p>
+                    </div>
+                    <div class="product-image-container">
+                        <img class="product-image" src="./images/phone1.png" alt="iphone">
+                    </div>
+                    <div class="product-details">
+                        <p class="product-name">iphone 14 (Blue, 128 GB)</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #999999;"></i>
+                        <i class="fa-solid fa-star" style="color: #999999;"></i>
+                        <i class="fa-solid fa-star" style="color: #999999;"></i>
+                        <i class="fa-solid fa-star" style="color: #999999;"></i>
+                        <i class="fa-solid fa-star" style="color: #999999;"></i>
+                    </div>
+                    <span class="review-count">(9303)</span>
+                    <div class="price">
+                        <p class="listprice">$129.99</p>
+                        <del class="saleprice">$149.99</del>
+                        <p class="offer">30% off</p>
+                    </div>
+                </div> -->
+            </section>
+        </div>
+        <div class="load-div">
+            <button id="load" class="load">
+                <span class="showmore-text">Show More</span>&nbsp;&nbsp;<i class="fa-solid fa-plus plus-icon"></i>
+            </button>
+            <div class="scroll" id="scroll">
+                <button id="scroll-top" class="scroll-top " title="Go to top">
+                    <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+    <!-- ---------Footer Section ----- -->
+    <footer>
+        <!-- ---------------Top footer-------------- -->
+        <div class="footer-top">
+            <div class="footer-top-left">
+                <div class="getupdates">
+                    <h3>LET’S STAY IN TOUCH</h3>
+                    <p>Get updates on sales specials and more</p>
+                </div>
+                <div class="email-input-container">
+                    <input class="email-input" type="email" placeholder="Email Adress">
+                    <p class="subscribe">SUBCRIBE</p>
+                </div>
+            </div>
+            <div class="footer-top-right">
+                <div class="follow">
+                    <h3>FOLLOW KRAYA.</h3>
+                    <p>We want to hear from you</p>
+                </div>
+                <div class="socialmedia">
+                    <a class="social-icons" href="#"><i class="fa-brands fa-square-facebook fa-lg"></i></a>
+                    <a class="social-icons" href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                    <a class="social-icons" href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                    <a class="social-icons" href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- <hr class="footer-lines"> -->
+        <!-- --------------middle footer----------------- -->
+        <div class="footer-middle">
+            <div class="middle-left">
+                <div class="left-links">
+                    <h4>About US</h4>
+                    <a class="footer-links" href="#">About Us</a>
+                    <a class="footer-links" href="#">Careers</a>
+                    <a class="footer-links" href="#">Blog</a>
+                    <a class="footer-links" href="#">News</a>
+                </div>
+                <div class="left-links">
+                    <h4>Support</h4>
+                    <a class="footer-links" href="#">Payments</a>
+                    <a class="footer-links" href="#">Shipping</a>
+                    <a class="footer-links" href="#">Cancellation & Return</a>
+                    <a class="footer-links" href="#">FAQ's</a>
+                </div>
+                <div class="left-links">
+                    <h4>Policy</h4>
+                    <a class="footer-links" href="#">Terms of Use</a>
+                    <a class="footer-links" href="#">Privacy Policy</a>
+                    <a class="footer-links" href="#">Intellectual Property</a>
+                    <a class="footer-links" href="#">Sitemap</a>
+                    <a class="footer-links" href="#">Security</a>
+                </div>
+                <div class="left-links mailus">
+                    <h4>Mail Us</h4>
+                    <p>17187 N. Laurel Park Dr., Ste. 110 Livonia, MI 48152 USA</p>
+                </div>
+            </div>
+            <div class="middle-right">
+                <div class="availability">
+                    <h3>1800 123 4567</h3>
+                    <p>Service hours: 09:00-21:00</p>
+                </div>
+                <div class="chartsupport-container">
+                    <a class="footer-links chatsupport" href="#">CHAT SUPPORT</a>
+                </div>
+                <div class="middle-right-payment">
+                    <p>PAYMENT METHODS</p>
+                    <a href="#"><img src="./images/visa.png" alt="visa card"></a>
+                    <a href="#"><img src="./images/mastercard.png" alt="master card"></a>
+                    <a href="#"><img src="./images/discover.png" alt="discover card"></a>
+                    <a href="#"><img src="./images/american-card.png" alt="american express card"></a>
+                    <a href="#"><img src="./images/paypal-icon.png" alt="paypal card"></a>
+                </div>
+            </div>
+
+        </div>
+        <!-- <hr class="footer-lines"> -->
+        <!-- --------------------------------bottom-footer---------------------------------- -->
+        <div class="footer-end">
+            <p>Copyright © 2010 - 2018 commerce factory. All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- ---------javascript link----- -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
